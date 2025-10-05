@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack && next export",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "preview:local": "next build && serve -s out -l 3000",  
+    "preview:gh": "next build && serve out"       
   },
   "dependencies": {
     "next": "15.5.0",
