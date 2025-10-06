@@ -2,13 +2,16 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack && next export",
     "start": "next start",
     "lint": "eslint",
-    "preview:local": "next build && serve -s out -l 3000",  
-    "preview:gh": "next build && serve out"       
+    "preview:local": "rimraf out && next build && serve -s out -l 3000",
+    "preview:auto": "rimraf out && next build && serve -s out -l 3000 & npx wait-on http://localhost:3000 && npx open-cli http://localhost:3000",
+    "deploy": "git add . && git commit -m \"Deploy to GitHub Pages\" && git push origin main",
+    "preview:all": "npm run preview:auto && echo 'Preview complete. To deploy, run: npm run deploy'"
   },
   "dependencies": {
     "next": "15.5.0",
