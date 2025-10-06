@@ -1,10 +1,16 @@
 @import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@theme {
+  /* Custom Colors */
+  --color-lightHover: #fcf4ff;
+  --color-darkHover: #2a004a;
+  --color-darkTheme: #11001F;
 
-*{
-  font-family: Outfit;
+  /* Custom Fonts */
+  --font-family-outfit: var(--font-outfit), sans-serif;
+  --font-family-ovo: var(--font-ovo), serif;
+
+  /* Custom Shadows */
+  --shadow-black: 4px 4px 0 #000;
+  --shadow-white: 4px 4px 0 #fff;
 }
-
