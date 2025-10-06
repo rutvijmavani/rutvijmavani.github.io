@@ -4,13 +4,13 @@ import "./globals.css";
 const outfit = Outfit({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-  variable: '--font-outfit',  // ADD THIS
+  variable: '--font-outfit',
 });
 
 const ovo = Ovo({
   subsets: ["latin"],
   weight: ["400"],
-  variable: '--font-ovo',  // ADD THIS
+  variable: '--font-ovo',
 });
 
 export const metadata = {
@@ -21,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`scroll-smooth ${outfit.variable} ${ovo.variable}`}>
-      <body className="font-outfit antialiased leading-8 overflow-x-hidden">
+      <body className="font-outfit antialiased leading-8 overflow-x-hidden  dark:bg-[#11001F] dark:text-white">
         {children}
       </body>
     </html>
