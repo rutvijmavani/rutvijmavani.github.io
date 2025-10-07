@@ -38,6 +38,7 @@ import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import picofme from './picofme.png';
 import  dsc from './DSC_0177.JPG';
 import Rutvij from './Rutvij.png';
+import Rutvij_dark from './Rutvij_dark.png';
 
 export const assets = {
     user_image,
@@ -79,7 +80,8 @@ export const assets = {
     right_arrow_bold_dark,
     picofme,
     dsc,
-    Rutvij
+    Rutvij,
+    Rutvij_dark
 };
 
 export const workData = [
