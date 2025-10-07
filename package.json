@@ -14,6 +14,7 @@
     "preview:all": "npm run preview:auto && echo 'Preview complete. To deploy, run: npm run deploy'"
   },
   "dependencies": {
+    "motion": "^12.23.22",
     "next": "15.5.0",
     "react": "19.1.0",
     "react-dom": "19.1.0"
